@@ -1,0 +1,343 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e7dede;
+    /* Fondo gris claro */
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+}
+
+
+/* Header dinámico */
+header {
+    background-color: #000;
+    /* Fondo negro */
+    color: #FFD700;
+    /* Texto amarillo */
+    border-radius: 5px;
+    padding: 20px 0;
+    /* Espaciado interno para que el contenido no se desborde */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra para destacar el header */
+}
+
+
+/* Ajusta el diseño del h1 dentro del header */
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre íconos y texto */
+    color: #FFD700;
+    /* Color del texto */
+    margin: 0;
+    /* Elimina márgenes adicionales */
+    padding: 0 20px;
+    /* Espaciado interno */
+}
+
+/* Ajusta el logo dentro del h1 */
+header h1 .h1-logo {
+    width: 40px;
+  
+    /* Tamaño del logo */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 30px; /* Empuja el logo hacia el borde derecho */
+}
+
+
+
+/* Ajusta el ícono de WhatsApp */
+header .whatsapp-icon {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #25D366;
+    /* Color verde de WhatsApp */
+    font-size: 3.5em;
+    /* Tamaño del ícono */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+
+}
+
+header .whatsapp-icon:hover {
+    transform: translateY(-50%) scale(1.2);
+    /* Efecto de zoom */
+}
+
+/* Leyenda al pasar el mouse */
+header .whatsapp-icon::after {
+    content: "Consultas";
+    /* Texto de la leyenda */
+    position: absolute;
+    top: 30%;
+    /* Posicionar debajo del ícono */
+    right: 70%;
+
+    transform: translateX(-50%);
+    background-color: #000;
+    /* Fondo negro */
+    color: white;
+    /* Texto amarillo */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.3em;
+    white-space: nowrap;
+    /* Evitar que el texto se divida en varias líneas */
+    opacity: 0;
+    /* Ocultar la leyenda por defecto */
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* Evitar que interfiera con el cursor */
+}
+
+/* Mostrar la leyenda al pasar el mouse */
+header .whatsapp-icon:hover::after {
+    opacity: 1;
+    /* Mostrar la leyenda */
+}
+
+
+
+main {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    padding: 20px;
+    margin-top: 90px; /* Ajusta este valor según el tamaño del header */
+}
+
+/* Ajusta la primera sección si es necesario */
+#home {
+    padding-top: 20px;
+    /* Espacio adicional si el contenido sigue muy cerca del header */
+}
+
+section {
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    /* Borde negro */
+    background-color: #FFD700;
+    /* Fondo amarillo */
+    color: #000;
+    /* Texto negro */
+    text-align: center;
+}
+
+section h2 {
+    color: #000;
+    /* Título en negro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre ícono y texto */
+    font-size: 1.5em;
+   
+}
+
+section p {
+    color: #000;
+    /* Texto en negro */
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Estilos para el carrusel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 40%;
+    /* Ajusta las imágenes al ancho del contenedor */
+    flex-shrink: 0;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra */
+    padding: 5px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    z-index: 1000;
+    border-radius: 5px;
+   
+}
+
+.carousel-btn.prev-btn {
+    left: 10px;
+}
+
+.carousel-btn.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilos para el formulario de consultas */
+#consultas {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    /* Borde negro */
+    background-color: #FFD700;
+    /* Fondo amarillo */
+    color: #000;
+    /* Texto negro */
+    text-align: center;
+}
+
+#consultas form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* Espacio entre los campos */
+}
+
+#consultas input,
+#consultas textarea {
+    width: 100%;
+    max-width: 500px;
+    /* Ancho máximo */
+    padding: 10px;
+    border: 1px solid #000;
+    /* Borde negro */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#consultas button {
+    background-color: #000;
+    /* Fondo negro */
+    color: #FFD700;
+    /* Texto amarillo */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#consultas button:hover {
+    background-color: #333;
+    /* Fondo gris oscuro */
+}
+
+footer {
+    background-color: #000; /* Fondo negro */
+    color: #FFD700; /* Texto amarillo */
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 0;
+    height: auto; /* Altura fija del footer */
+    width: 100%;
+}
+/* Opcional: Ajusta el tamaño del texto dentro del footer */
+footer .copy {
+    font-size: 12px; /* Aumenta el tamaño del texto si es necesario */
+    height: 50px;
+    background-color: #000;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #FFD700;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+.copy {
+    font-size: 10px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: 9%;
+        padding: 5px 0;
+        /* Reduce el padding en móviles */
+    }
+
+    header h1 {
+        flex-direction: row;
+        /* Coloca el contenido en una columna */
+        text-align: center;
+        font-size: large;
+    }
+
+    header .whatsapp-icon {
+        font-size: 2em;
+        /* Ajusta el tamaño del ícono */
+        right: 10px;
+    }
+}
+
+main {
+    margin-top: 80px;
+    /* Ajusta el margen superior para móviles */
+
+}
+
+
+
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+#consultas input,
+#consultas textarea {
+    width: 90%;
+    /* Ajustar ancho en pantallas pequeñas */
+
+}
+
+footer {
+    background-color: #000;
+    height: 110px;
+    /* Reduce la altura del footer en móviles */
+
+}
