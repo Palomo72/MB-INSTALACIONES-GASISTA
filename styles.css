@@ -131,7 +131,7 @@ section {
     border-radius: 5px;
     border: 1px solid #000;
     /* Borde negro */
-    background-color: #FFD700;
+    background-color: #ffd900;
     /* Fondo amarillo */
     color: #000;
     /* Texto negro */
@@ -141,6 +141,7 @@ section {
 section h2 {
     color: #000;
     /* Título en negro */
+    background-color: #ffd900;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,16 +275,7 @@ footer {
     width: 100%;
 }
 /* Cambia el color de los enlaces en el footer */
-footer a {
-    color:rgb(100, 235, 237); /* Cambia este color al que desees */
-    text-decoration: none; /* Elimina el subrayado del enlace */
-}
 
-/* Cambia el color al pasar el mouse sobre los enlaces */
-footer a:hover {
-    color: #FFFFFF; /* Cambia este color al que desees para el hover */
-    text-decoration: underline; /* Opcional: agrega subrayado al pasar el mouse */
-}
 /* Opcional: Ajusta el tamaño del texto dentro del footer */
 footer .copy {
     font-size: 12px; /* Aumenta el tamaño del texto si es necesario */
@@ -298,6 +290,16 @@ footer a:hover {
 
 footer i {
     margin-right: 5px;
+}
+footer a {
+    color:rgb(100, 235, 237); 
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+}
+
+footer a:hover {
+    color:#ffd900; /* Cambia a blanco al pasar el mouse */
+ 
 }
 
 .copy {
