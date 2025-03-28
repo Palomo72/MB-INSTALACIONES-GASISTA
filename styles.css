@@ -175,7 +175,7 @@ section p {
 }
 
 .carousel-slide img {
-    width: 40%;
+    width: 50%;
     /* Ajusta las imágenes al ancho del contenedor */
     flex-shrink: 0;
     border-radius: 10px;
