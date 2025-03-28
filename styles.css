@@ -33,6 +33,7 @@ header {
 
 /* Ajusta el diseño del h1 dentro del header */
 header h1 {
+    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
