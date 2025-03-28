@@ -272,6 +272,17 @@ footer {
     height: auto; /* Altura fija del footer */
     width: 100%;
 }
+/* Cambia el color de los enlaces en el footer */
+footer a {
+    color:rgb(100, 235, 237); /* Cambia este color al que desees */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Cambia el color al pasar el mouse sobre los enlaces */
+footer a:hover {
+    color: #FFFFFF; /* Cambia este color al que desees para el hover */
+    text-decoration: underline; /* Opcional: agrega subrayado al pasar el mouse */
+}
 /* Opcional: Ajusta el tamaño del texto dentro del footer */
 footer .copy {
     font-size: 12px; /* Aumenta el tamaño del texto si es necesario */
