@@ -318,6 +318,30 @@ section p {
     background-color: #333;
     /* Fondo gris oscuro */
 }
+#forma-pago {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #000; /* Borde negro */
+    background-color: #FFD700; /* Fondo amarillo */
+    color: #000; /* Texto negro */
+    text-align: center;
+}
+
+#forma-pago h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    font-size: 1.5em;
+    color: #000; /* Color del título */
+}
+
+#forma-pago p {
+    font-size: 1em;
+    color: #000; /* Color del texto */
+    text-align: center;
+}
 
 footer {
     background-color: #000;
