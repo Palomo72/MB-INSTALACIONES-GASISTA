@@ -442,8 +442,11 @@ main {
     /* Ajusta el margen superior para móviles */
 
 }
-
-
+@@media (max-width: 768px) {
+    #home {
+        background-position: center; /* Centra la imagen en móviles */
+    }
+}
 
 section {
     margin-bottom: 30px;
