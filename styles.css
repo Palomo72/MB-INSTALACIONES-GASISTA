@@ -154,28 +154,29 @@ main {
 
 /* Ajusta la primera sección si es necesario */
 #home {
-    padding-top: 20px;
-    /* Espacio adicional si el contenido sigue muy cerca del header */
-   background-color: #8b0000;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Capa de transparencia */
+        url('images/imagen7.png'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #FFFFFF; /* Cambia el color del texto para que contraste con el fondo */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados (opcional) */
+    min-height: 400px; /* Altura mínima para que la imagen sea visible */
 }
 
 
 section {
     margin-bottom: 50px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #000;
-    /* Borde negro */
-    background-color: #ffd900;
-    /* Fondo amarillo */
-    color: #000;
-    /* Texto negro */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #000; /* Borde negro */
+    background-color: #ffd900; /* Fondo amarillo */
+    color: #000; /* Texto negro */
     text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.742); /* Sombra hacia arriba */
 }
-
 
 section h2 {
     color: #8b0000; /* Rojo oscuro */
@@ -189,7 +190,7 @@ section h2 {
 .seccion1  p{
     color: #000;
     /* Texto en negro */
-    background-color: #ffffffdc;
+    background-color: #ffffff93;
     border-radius: 20px;
     text-align: center;
     font-size: 1em;
@@ -437,8 +438,11 @@ main {
     /* Ajusta el margen superior para móviles */
 
 }
-
-  
+#home {
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    min-height: 20vh; /* Hace que la sección ocupe toda la altura de la pantalla */
+}
 
 section {
     margin-bottom: 30px;
