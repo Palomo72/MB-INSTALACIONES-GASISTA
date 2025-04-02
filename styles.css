@@ -156,12 +156,7 @@ main {
 #home {
     padding-top: 20px;
     /* Espacio adicional si el contenido sigue muy cerca del header */
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Capa de transparencia más ligera */
-        url('images/fondo.png'); /* Imagen de fondo */
-    background-size: auto 100%; /* Ajusta la altura de la imagen al 100% de la sección */
-    background-position: left center; /* Alinea la imagen a la izquierda y la centra verticalmente */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+   background-color: #8b0000;
     color: #FFFFFF; /* Cambia el color del texto para que contraste con el fondo */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados (opcional) */
@@ -194,8 +189,8 @@ section h2 {
 .seccion1  p{
     color: #000;
     /* Texto en negro */
-    background-color: #ffffff9e;
-    border-radius: 30px;
+    background-color: #ffffffdc;
+    border-radius: 20px;
     text-align: center;
     font-size: 1em;
     font-weight: bold;
@@ -443,11 +438,7 @@ main {
 
 }
 
-    #home {
-       
-        background-position: center; /* Centra la imagen */
-    }
-
+  
 
 section {
     margin-bottom: 30px;
