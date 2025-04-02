@@ -156,7 +156,17 @@ main {
 #home {
     padding-top: 20px;
     /* Espacio adicional si el contenido sigue muy cerca del header */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Capa de transparencia más ligera */
+        url('images/sin_fondo.png'); /* Imagen de fondo */
+    background-size: auto 100%; /* Ajusta la altura de la imagen al 100% de la sección */
+    background-position: left center; /* Alinea la imagen a la izquierda y la centra verticalmente */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #FFFFFF; /* Cambia el color del texto para que contraste con el fondo */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados (opcional) */
 }
+
 
 section {
     margin-bottom: 50px;
@@ -171,22 +181,34 @@ section {
     text-align: center;
 }
 
+
 section h2 {
-    color: #000;
-    /* Título en negro */
-    background-color: #ffd900;
+    color: #8b0000; /* Rojo oscuro */
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    /* Espacio entre ícono y texto */
+    gap: 10px; /* Espacio entre ícono y texto */
     font-size: 1.5em;
-
+    text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.314); /* Sombra hacia arriba */
+}
+.seccion1  p{
+    color: #000;
+    /* Texto en negro */
+    background-color: #ffffff9e;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+.seccion1 h2{
+    color: #FFFFFF;
+    text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.93);
 }
 
 section p {
     color: #000;
     /* Texto en negro */
+    border-radius: 5px;
     text-align: center;
     font-size: 1em;
 }
@@ -206,12 +228,12 @@ section p {
     justify-content: center;
     gap: 10px; /* Espacio entre el ícono y el texto */
     font-size: 1.5em;
-    color: #000; /* Color del título */
+    color:#8b0000; /* Color del título */
 }
 
 #climatizacion p {
     font-size: 1em;
-    color: #000; /* Color del texto */
+    color:#000; /* Color del texto */
     text-align: center;
 }
 
@@ -324,7 +346,7 @@ section p {
     border-radius: 5px;
     border: 1px solid #000; /* Borde negro */
     background-color: #FFD700; /* Fondo amarillo */
-    color: #000; /* Texto negro */
+    color:#000; /* Texto negro */
     text-align: center;
 }
 
@@ -334,7 +356,7 @@ section p {
     justify-content: center;
     gap: 10px; /* Espacio entre el ícono y el texto */
     font-size: 1.5em;
-    color: #000; /* Color del título */
+    color:#8b0000; /* Color del título */
 }
 
 #forma-pago p {
