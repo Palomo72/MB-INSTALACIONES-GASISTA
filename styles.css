@@ -154,11 +154,16 @@ main {
 
 /* Ajusta la primera sección si es necesario */
 #home {
-   background-color: #ffd900;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Capa de transparencia */
+        url('images/imagen7.png'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #FFFFFF; /* Cambia el color del texto para que contraste con el fondo */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados (opcional) */
-    min-height: 400px; /* Altura mínima para que la imagen sea visible */
+    min-height: 00px; /* Altura mínima para que la imagen sea visible */
 }
 
 
@@ -192,13 +197,14 @@ section h2 {
     font-weight: bold;
 }
 .seccion1 h2{
-    color: #8b0000;
-    text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.427);
+    color: #FFFFFF;
+    text-shadow: 0px -2px 4px rgb(0, 0, 0);
 }
 
 section p {
     color: #000;
     /* Texto en negro */
+    background-color: #ffffff93;
     border-radius: 5px;
     text-align: center;
     font-size: 1em;
