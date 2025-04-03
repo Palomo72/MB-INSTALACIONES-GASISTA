@@ -66,6 +66,7 @@ header h1 {
     align-items: center;
     justify-content: center;
     font-size:large;
+    font-weight:900;
     border-radius: 5px;
     gap: 10px;
     /* Espacio entre íconos y texto */
@@ -154,16 +155,28 @@ main {
 
 /* Ajusta la primera sección si es necesario */
 #home {
+    position: relative;
+    padding: 20px;
+    text-align: center; /* Centra el contenido */
     background: 
         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), /* Capa de transparencia */
-        url('./images/imagen7.png'); /* Imagen de fondo */
+        url('images/imagen7.png'); /* Imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra toda la sección */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     color: #FFFFFF; /* Cambia el color del texto para que contraste con el fondo */
-    padding: 20px; /* Espaciado interno */
+    min-height: 400px; /* Altura mínima para que la imagen sea visible */
     border-radius: 5px; /* Bordes redondeados (opcional) */
-    min-height: 00px; /* Altura mínima para que la imagen sea visible */
+}
+
+.i7 img {
+    width: 100%; /* La imagen ocupará el 50% del ancho de la sección */
+    max-width: 50%; /* Asegura que no exceda el tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    display: block; /* Asegura que se comporte como un bloque */
+    border-radius: 10px;
+   
 }
 
 
@@ -197,8 +210,8 @@ section h2 {
     font-weight: bold;
 }
 .seccion1 h2{
-    color: #FFFFFF;
-    text-shadow: 0px -2px 4px rgb(0, 0, 0);
+    color: #8b0000;
+    text-shadow: 0px -2px 4px rgba(0, 0, 0, 0.282);
 }
 
 section p {
@@ -439,11 +452,7 @@ main {
     /* Ajusta el margen superior para móviles */
 
 }
-#home {
-    background-size: cover; /* Asegura que la imagen cubra toda la sección */
-    background-position: center; /* Centra la imagen */
-    min-height: 20vh; /* Hace que la sección ocupe toda la altura de la pantalla */
-}
+
 
 section {
     margin-bottom: 30px;
